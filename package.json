@@ -1,0 +1,21 @@
+{
+  "name": "ujs",
+  "version": "1.0.0",
+  "description": "本目录的 `worker.ts` 是对 `deno.ts` 的移植版本：",
+  "main": "index.js",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260517.0",
+    "node-gyp": "^11.4.2",
+    "node-addon-api": "^8.5.0",
+    "wrangler": "^4.92.0"
+  }
+}
