@@ -51,9 +51,9 @@ cp wrangler.toml.example wrangler.toml
 > - `tcp://` / `proxy://` / `direct://`：走直连回退模式(proxyip)
 >
 > 也支持通过 **查询参数临时覆盖**（适用于环境变量里的 `PROXY_URL` 临时不可用时应急切换）：
-> - `/{XPATH}/{sid}?PURL=tcp://exam.ple:443`
-> - `/{XPATH}/{sid}?PURL=socks5://user:pass@www.socks:1256`
-> - `/{XPATH}/{sid}?PURL=http://user:pass@proxy.example.com:3128`
+> - `/{XPATH}?PURL=tcp://exam.ple:443`
+> - `/{XPATH}?PURL=socks5://user:pass@www.socks:1256`
+> - `/{XPATH}?PURL=http://user:pass@proxy.example.com:3128`
 >
 > 注意：该覆盖只对“该 sid 的会话初始化前”生效；如果连接已建立，后续再传 `PURL` 不会切换现有连接。
 
